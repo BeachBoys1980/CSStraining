@@ -1,0 +1,97 @@
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+.header {
+  padding: 10px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+}
+.menubar {
+  display: flex;
+  background-color: black;
+  justify-content: flex-end;
+}
+
+.menubar a {
+  color: white;
+  padding: 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.menubar a:hover {
+  background-color: white;
+  color: black;
+}
+.resume {
+  display: grid;
+  padding: 30px;
+
+  grid-template-areas:
+    "name name"
+    "address address"
+    "experience skills"
+    "experience education"
+    "personal personal";
+}
+
+.name {
+  grid-area: name;
+  text-align: center;
+  padding: 10px;
+  background-color: grey;
+  color: white;
+}
+
+.address {
+  grid-area: address;
+  text-align: center;
+}
+
+.experience {
+  /*grid-template-columns: 2fr 1fr;*/
+  grid-area: experience;
+  background-color: #bdbaba85;
+  padding: 20px;
+}
+
+.skills {
+  grid-area: skills;
+  text-align: left;
+  padding: 20px;
+  background-color: #ededed;
+}
+
+.education {
+  grid-area: education;
+  text-align: left;
+  padding: 20px;
+  background-color: #ededed;
+}
+
+.personal {
+  grid-area: personal;
+}
+
+@media only screen and (max-width: 600px) {
+  .resume {
+    grid-template-areas:
+      "name"
+      "address"
+      "experience"
+      "skills"
+      "education"
+      "personal";
+  }
+}
+
+.footer {
+  padding: 5px;
+  text-align: right;
+  background: #ddd;
+  font-size: 10px;
+  font-style: italic;
+}
