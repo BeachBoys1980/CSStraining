@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- avoid sharing css file for different pages, 
+      if you want you to resue the css,
+      you can seperate individual component css to different files 
+      and import individual css file individually
+     -->
     <link rel="stylesheet" type="text/css" href="index.css" />
   </head>
 
@@ -15,36 +20,44 @@
       <a href="#">BLOG</a>
     </div>
 
-    <div class="blogA">
+    <div class="blogA"> <!-- spinal-case, blob-a -->
       <h1>Blog A</h1>
       <p>hihi, this is my sharing for blog a</p>
       <p style="text-align: right;">
         Click <a href="test.html">HERE</a> to find out more
       </p>
-    </div>
-    <div class="blogB">
+    </div> 
+    <!-- adding a line break betwen individual blog will make reading the code easier  -->
+    <div class="blogB"> <!-- spinal-case, blob-b -->
       <h1>Blog B</h1>
       <p>hihi, this is my sharing for blog B</p>
       <p style="text-align: right;">
         Click <a href="test.html">HERE</a> to find out more
       </p>
     </div>
-    <div class="blogA">
+    <div class="blogA"> <!-- spinal-case, blob-A. Also Content of Blog C is using a blogA class -->
       <h1>Blog C</h1>
       <p>hihi, this is my sharing for blog C</p>
       <p style="text-align: right;">
         Click <a href="test.html">HERE</a> to find out more
       </p>
     </div>
-    <div class="blogB">
+    <div class="blogB"><!-- spinal-case, blob-b -->
       <h1>Blog D</h1>
       <p>hihi, this is my sharing for blog D</p>
+      <!-- Inline styling are consider bad practice as they make it difficult to modify on imported css files -->
       <p style="text-align: right;">
         Click <a href="test.html">HERE</a> to find out more
       </p>
     </div>
+    <!-- use css margin to create the space on top, presentational should be done on css -->
     <br /><br /><br />
     <div class="footer">
+        <!-- 
+        can just copy the © and use it directly
+        is clearer to see the icon. Most of these icon are utf-8 compliant
+        <h2>© Copyright 2020 Kelvin</h2>
+      -->
       <h2>&#169; Copyright 2020 Kelvin</h2>
     </div>
   </body>
