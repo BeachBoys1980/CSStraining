@@ -40,6 +40,7 @@ body {
   color: white;
 }
 
+/* avoid naming items with number behind, will be difficult for other developers to understand */
 .resumeMain2 {
   flex-grow: 1;
   padding: 20px;
@@ -49,6 +50,7 @@ body {
   border-color: grey;
 }
 
+/* .blog:nth-child(even) to change the style instead of creating many blog */
 .blogA {
   padding: 20px;
   text-align: left;

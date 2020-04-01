@@ -52,7 +52,7 @@ body {
 }
 
 .experience {
-  /*grid-template-columns: 2fr 1fr;*/
+  /*grid-template-columns: 2fr 1fr;*/  /* remove commented code */
   grid-area: experience;
   background-color: #bdbaba85;
   padding: 20px;
